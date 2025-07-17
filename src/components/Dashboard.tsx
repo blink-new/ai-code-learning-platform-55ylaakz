@@ -326,7 +326,7 @@ export function Dashboard({ user }: DashboardProps) {
             <CardTitle>Continue Learning</CardTitle>
           </CardHeader>
           <CardContent>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
               <Button className="h-auto p-4 justify-start" variant="outline">
                 <div className="flex items-center space-x-3">
                   <div className="p-2 rounded-lg bg-primary/10">
@@ -347,6 +347,18 @@ export function Dashboard({ user }: DashboardProps) {
                   <div className="text-left">
                     <div className="font-medium">Daily Challenge</div>
                     <div className="text-sm text-muted-foreground">Complete today&apos;s coding challenge</div>
+                  </div>
+                </div>
+              </Button>
+
+              <Button className="h-auto p-4 justify-start" variant="outline">
+                <div className="flex items-center space-x-3">
+                  <div className="p-2 rounded-lg bg-purple-100">
+                    <Trophy className="w-6 h-6 text-purple-600" />
+                  </div>
+                  <div className="text-left">
+                    <div className="font-medium">Challenge Mode</div>
+                    <div className="text-sm text-muted-foreground">Test your skills with timed challenges</div>
                   </div>
                 </div>
               </Button>

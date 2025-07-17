@@ -17,13 +17,13 @@ interface Lesson {
 interface LessonContentProps {
   lesson: Lesson
   onAIHelpClick: () => void
-  currentLessonIndex: number
-  totalLessons: number
-  onNextLesson: () => void
-  onPrevLesson: () => void
+  currentLessonIndex?: number
+  totalLessons?: number
+  onNextLesson?: () => void
+  onPrevLesson?: () => void
 }
 
-export function LessonContent({ lesson, onAIHelpClick, currentLessonIndex, totalLessons, onNextLesson, onPrevLesson }: LessonContentProps) {
+export function LessonContent({ lesson, onAIHelpClick, currentLessonIndex = 0, totalLessons = 1, onNextLesson, onPrevLesson }: LessonContentProps) {
   return (
     <div className="h-full flex flex-col bg-background">
       <div className="p-6 border-b">
